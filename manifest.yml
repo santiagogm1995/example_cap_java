@@ -1,0 +1,9 @@
+---
+applications:
+- name: bookstore
+  path: srv/target/bookshop-exec.jar
+  random-route: true
+  services:
+  - cloud-cap-samples-java-db-hdi-container
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
